@@ -1,0 +1,248 @@
+/* header */
+a{
+    text-decoration: none;
+}
+
+.header a{
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.header{
+    padding: 32px 0;
+    background-color: #6d74c5;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.header ul{
+    display: flex;
+    margin-top: 10px;
+    gap: 26px;
+}
+
+.header .logo{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 30px;
+}
+
+.header img{
+    width: 65px;
+    height: auto;
+}
+
+/* Стили для секции hero */
+.hero {
+    padding: 50px 0;
+    background: #f8f9fa;
+}
+
+/* Стили для контейнера слайдера */
+.hero .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Основные стили слайдера */
+.swiper {
+    width: 100%;
+    padding: 20px 5px;
+}
+
+/* Стили для слайдов */
+.swiper-slide {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: auto;
+}
+
+.swiper-slide:hover {
+    transform: translateY(-5px);
+}
+
+/* Стили для изображений в слайдах */
+.swiper-slide img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+/* Стили для текстовых элементов */
+.swiper-slide small {
+    display: block;
+    padding: 15px 20px 5px;
+    color: #666;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.swiper-slide p {
+    padding: 0 20px;
+    margin: 10px 0;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    min-height: 48px;
+}
+
+/* Стили для кнопки "Подробнее" */
+.swiper-slide a {
+    display: inline-block;
+    margin: 15px 20px 20px;
+    padding: 10px 25px;
+    background: #6d74c5;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.swiper-slide a:hover {
+    background: #6d74c5;
+    transform: scale(1.05);
+}
+
+/* Стили для кнопок навигации */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #6d74c5;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 18px;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    .hero {
+        padding: 30px 0;
+    }
+    
+    .swiper-slide img {
+        height: 200px;
+    }
+    
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .swiper-slide img {
+        height: 180px;
+    }
+    
+    .swiper-slide p {
+        font-size: 14px;
+    }
+    
+    .swiper-slide a {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+}
+
+.short-search {
+    padding: 96px 0;
+    background-image: url('../images/img/back-1.jpg');
+    background-size: 100px 100px;
+}
+
+.short-search form {
+    display: flex; /* Используем flexbox для выравнивания */
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.short-search label {
+    margin-bottom: 10px; /* Отступ снизу */
+    font-weight: bold; /* Жирный шрифт */
+    font-size: 16px; /* Увеличен размер шрифта */
+}
+
+.short-search select, .short-search button {
+    padding: 12px; /* Увеличены отступы внутри элементов */
+    margin-bottom: 10px; /* Отступ снизу */
+    border: 1px solid #ccc; /* Рамка */
+    border-radius: 4px; /* Закругленные углы */
+    width: 100%; /* Ширина 100% для лучшего выравнивания */
+    max-width: 200px; /* Максимальная ширина */
+}
+
+.short-search button {
+    background-color: #6d74c5; /* Цвет кнопки */
+    color: white; /* Цвет текста кнопки */
+    cursor: pointer; /* Указатель при наведении */
+    transition: background-color 0.3s ease; /* Плавный переход цвета */
+}
+
+.short-search button:hover {
+    background-color: #0056b3; /* Цвет кнопки при наведении */
+}
+
+/*Facts*/
+.facts {
+    padding: 96px 0; /* Отступы сверху и снизу */
+    background-color: #6d74c5; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+}
+
+.facts .container {
+    max-width: 1200px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера */
+    padding: 0 15px; /* Отступы для адаптивности */
+}
+
+.facts h2 {
+    font-size: 36px; /* Увеличенный размер шрифта для заголовка */
+    font-weight: bold; /* Жирный шрифт */
+    text-align: center; /* Выравнивание по центру */
+    margin-bottom: 40px; /* Отступ снизу для заголовка */
+}
+
+.facts ul {
+    display: flex; /* Используем Flexbox для расположения элементов */
+    gap: 32px; /* Промежуток между элементами */
+    justify-content: space-evenly; /* Равномерное распределение элементов */
+    flex-wrap: wrap; /* Разрешаем перенос на меньших экранах */
+}
+
+.fact-item {
+    background-color: rgba(255, 255, 255, 0.1); /* Светлый фон для контраста */
+    border-radius: 10px; /* Закругленные углы */
+    padding: 20px; /* Отступы внутри каждого элемента */
+    text-align: center; /* Выравнивание текста по центру */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Плавные переходы */
+}
+
+.fact-item:hover {
+    transform: translateY(-5px); /* Небольшой подъем при наведении */
+    background-color: rgba(255, 255, 255, 0.2); /* Изменение фона при наведении */
+}
+
+.facts i {
+    font-size: 48px; /* Увеличенный размер иконок */
+    color: #ffcc00; /* Цвет иконок для контраста */
+    margin-bottom: 16px; /* Отступ снизу для иконок */
+}
