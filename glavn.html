@@ -124,6 +124,75 @@
             </div>
             
         </section>
+        <section class="search"> 
+            <div class="container"> 
+                <div class="search-item"> 
+                    <form> 
+                        <label for="place">Район</label> 
+                        <select name="place" id="place"> 
+                            <option value="0">Правый берег</option> 
+                            <option value="1">Левый берег</option> 
+                        </select> 
+                        <label for="animal">Вид животного</label> 
+                        <select name="animal" id="animal"> 
+                        <option value="cat">Кот</option> 
+                        <option value="dog">Собака</option> 
+                        <option value="rabbit">Кролик</option> 
+                        <option value="hamster">Хомяк</option> 
+                        <option value="parrot">Попугай</option> 
+                    </select> 
+                        <button type="submit">Поиск</button> 
+                    </form> 
+                </div> 
+                <div class="search-item">
+                    <img src="images/img/lev.jpg" alt="">
+                </div>
+            </div> 
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <h2 class="aa">Отзывы</h2>
+                <!-- Swiper -->
+                <div class="swiper reviews-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <img src="images/img/lev.jpg" alt="Фото животного" class="animal-photo">
+                                <h3 class="author-name">Анна</h3>
+                                <p class="review-text">Это лучший питомец, которого я когда-либо имела! Он всегда радует меня своим настроением.</p>
+                                <span class="review-date">15 ноября 2024</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <img src="images/img/lev.jpg" alt="Фото животного" class="animal-photo">
+                                <h3 class="author-name">Сидор</h3>
+                                <p class="review-text">Мой кот — это просто находка! Он всегда веселит и приносит радость в дом.</p>
+                                <span class="review-date">14 ноября 2024</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <img src="images/img/lev.jpg" alt="Фото животного" class="animal-photo">
+                                <h3 class="author-name">Мария Иванова</h3>
+                                <p class="review-text">Я не представляю свою жизнь без своей собаки. Она — мой лучший друг и верный компаньон.</p>
+                                <span class="review-date">13 ноября 2024</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <img src="images/img/lev.jpg" alt="Фото животного" class="animal-photo">
+                                <h3 class="author-name">Владик</h3>
+                                <p class="review-text">Очень смешной и  прикольный</p>
+                                <span class="review-date">13 ноября 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -136,6 +205,14 @@
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
+      },
+    });
+    var reviewsSwiper = new Swiper(".reviews-swiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
     });
   </script>

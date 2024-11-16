@@ -246,3 +246,87 @@ a{
     color: #ffcc00; /* Цвет иконок для контраста */
     margin-bottom: 16px; /* Отступ снизу для иконок */
 }
+/*search*/
+.search {
+    padding: 96px 0;
+}
+
+.search .container {
+    display: flex;
+    gap: 96px;
+    justify-content: center;
+    align-items: center;
+}
+
+.search form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.search select {
+    padding: 10px;
+    border: 1px solid #ccc; /* Легкая граница */
+    border-radius: 5px; /* Закругленные углы */
+    font-size: 14px;
+}
+
+.search button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6d74c5; /* Цвет кнопки */
+    color: white; /* Цвет текста на кнопке */
+    font-size: 16px;
+    cursor: pointer; /* Указатель при наведении */
+    transition: background-color 0.3s ease; /* Плавный переход цвета */
+}
+.search button:hover {
+    background-color: #0056b3; /* Темнее при наведении */
+}
+/* Swiper */
+.reviews {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+
+.aa {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.swiper {
+    position: relative;
+}
+
+.review-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.animal-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.author-name {
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+.review-text {
+    font-size: 1rem;
+    margin: 15px 0;
+}
+
+.review-date {
+    display: block;
+    font-size: 0.9rem;
+    color: #888888;
+}
