@@ -281,13 +281,17 @@ a{
     cursor: pointer; /* Указатель при наведении */
     transition: background-color 0.3s ease; /* Плавный переход цвета */
 }
+.fact-item:hover {
+    transform: translateY(-5px); /* Небольшой подъем при наведении */
+    background-color: rgba(255, 255, 255, 0.2); /* Изменение фона при наведении */
+}
 .search button:hover {
     background-color: #0056b3; /* Темнее при наведении */
 }
 /* Swiper */
 .reviews {
     padding: 40px 0;
-    background-color: #f9f9f9;
+    background-color: #6d74c5;
 }
 
 
