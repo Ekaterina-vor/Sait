@@ -249,6 +249,7 @@ a{
 /*search*/
 .search {
     padding: 96px 0;
+    
 }
 
 .search .container {
@@ -334,3 +335,95 @@ a{
     font-size: 0.9rem;
     color: #888888;
 }
+/*sub*/
+.sub
+{
+    padding: 96px 0;
+    background-color: #ffffff;
+    color: black;
+    background-image: url('../../images/fon.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.sub label{
+    display: flex;
+    font-weight: bold; /* Жирный шрифт для меток */
+    margin-bottom: 10px; /* Отступ снизу */
+    
+}
+.sub form{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+    margin: 0 auto;
+}
+.sub input, .sub button {
+    padding: 12px; /* Увеличенные отступы внутри элементов */
+    border-radius: 5px; /* Закругленные углы */
+    border: 1px solid #ccc; /* Легкая граница */
+    
+}
+.sub button {
+    background-color: #6d74c5; /* Цвет кнопки */
+    color: white; /* Цвет текста кнопки */
+    cursor: pointer; /* Указатель при наведении */
+}
+.sub button:hover {
+    background-color: #0056b3; /* Темнее при наведении */
+}
+/*footer*/
+.footer {
+    padding: 40px 0; /* Отступы сверху и снизу */
+    background-color: #6d74c5; /* Цвет фона подвала */
+    color: #ffffff; /* Цвет текста */
+}
+
+.footer .container {
+    max-width: 100%; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера */
+    padding: 0 50px; /* Отступы для адаптивности */
+    display: flex; /* Используем flexbox для выравнивания */
+    justify-content: space-between; /* Равномерное распределение элементов */
+    align-items: center; /* Вертикальное выравнивание элементов */
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение элементов внутри footer-item */
+    
+    gap: 30px;
+}
+
+.footer-item a {
+    color: #ffffff; /* Цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    font-size: 16px; /* Размер шрифта ссылок */
+}
+
+.footer-item a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении для интерактивности */
+}
+
+.footer-item .tel:before { 
+    content: "\f095"; /* иконка телефона Font Awesome */ 
+    font-family: 'FontAwesome'; 
+    position: absolute; 
+    left: 30px; 
+} 
+ 
+.footer-item .mail:before { 
+    content: "\f0e0"; /* иконка конверта Font Awesome */ 
+    font-family: 'FontAwesome'; 
+    position: absolute; 
+    left: 30px; 
+}
+
+
+
+
+
+
+
+
