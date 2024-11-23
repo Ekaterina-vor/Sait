@@ -1,0 +1,225 @@
+/* Общие стили */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #6d74c5;
+
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+header {
+    padding: 32px 0;
+}
+
+.header {
+    padding: 2rem 0;
+}
+
+header a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: #6d74c5;
+        transform: translateX(-5px);
+    }
+
+    &::before {
+        content: '← ';
+        margin-right: 0.5rem;
+    }
+}
+
+/* Стили для информации */
+.info .container {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 40px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px; /* Максимальная ширина контейнера */
+}
+
+/* Стили для изображения профиля */
+.info-img {
+    width: 150px; /* Ширина изображения */
+    height: auto; /* Высота автоматически подстраивается */
+    border-radius: 50%; /* Круглая форма изображения */
+    object-fit: cover; /* Обрезка изображения по центру */
+}
+
+/* Стили для списка информации */
+.info-list {
+   list-style-type: none; /* Убираем маркеры списка */
+   padding-left: 0; /* Убираем отступ слева */
+}
+
+.info li {
+   font-size: 16px; 
+   margin-bottom: 16px; 
+   color: #444; 
+   line-height: 1.5; 
+   padding: 12px 16px; 
+   background-color: #f8f9fa; 
+   border-radius: 8px; 
+   transition: all .3s ease; 
+   display: flex; 
+   align-items: center; 
+   gap: 10px; 
+}
+
+.info li i {
+   font-size: 18px; 
+   color:#6d74c5; 
+   width :20px; 
+   text-align:center; 
+   flex-shrink :0; 
+}
+
+.info li:hover {
+   transform :translateX(5px); 
+   background-color :#f0f0f0; 
+}
+
+.info li:last-child {
+   margin-bottom :0; 
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width :768px) { 
+   .info .container { 
+       padding :30px ; 
+       flex-direction :column; 
+   } 
+
+   header { 
+       padding :20px ; 
+   } 
+}
+
+@media (max-width :480px) { 
+   .info .container { 
+       padding :20px ; 
+   } 
+
+   .info li { 
+       font-size :14px ; 
+       padding :10px ; 
+   } 
+}
+
+/* Стили для кнопки выхода */
+.info-btn {
+   background :linear-gradient(45deg, #6d74c5, #6d74c5); 
+   color:white; 
+   padding :14px 28px ; 
+   border:none; 
+   border-radius :8px; 
+   font-size :16px; 
+   font-weight :600; 
+   cursor:pointer; 
+   transition :all .3s ease; 
+   margin-top :20px; 
+   box-shadow :0 4px15px rgba(0,123,255,.2);  
+}
+
+.info-btn:hover {  
+   transform :translateY(-2px);  
+   box-shadow :0 6px20px rgba(0,123,255,.3);  
+}
+
+.info-btn:active {  
+   transform :translateY(1px);  
+   box-shadow :0 2px10px rgba(0,123,255,.2);  
+}
+
+.info-btn::before {  
+   content:'';  
+   position:absolute;  
+   top :0;  
+   left :-100%;  
+   width :100%;  
+   height :100%;  
+   background :linear-gradient(120deg, transparent, rgba(255,255,255,.2), transparent);  
+   transition :.5s;  
+}
+
+.info-btn:hover::before {  
+   left :100%;  
+}
+/*Hero*/
+.hero {
+    background-color: #f9f9f9; /* Светлый фон для контраста */
+    border-radius: 8px; /* Закругленные углы */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Легкая тень для глубины */
+    padding: 96px 0; /* Сохранение вашего верхнего и нижнего отступа */
+}
+
+.hero h2 {
+    color: #333; /* Темный цвет заголовка */
+    margin: 0 16px 48px 0; /* Сохранение ваших отступов */
+}
+
+.hero select {
+    padding: 12px; /* Отступы внутри селекта */
+    border: 1px solid #ccc; /* Граница селекта */
+    border-radius: 4px; /* Закругленные углы для селекта */
+    margin-bottom: 20px; /* Отступ снизу от селекта */
+}
+
+.hero ul {
+    display: grid; /* Сохранение вашей сетки */
+    grid-template-columns: repeat(3, 1fr); /* Три колонки */
+    gap: 24px; /* Отступы между элементами списка */
+}
+
+.hero li {
+    background-color: #fff; /* Белый фон для элементов списка */
+    border-radius: 8px; /* Закругленные углы для элементов списка */
+    padding: 16px; /* Внутренние отступы для элементов списка */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Легкая тень для элементов списка */
+}
+
+.hero small {
+    color: #888; /* Цвет для даты и района */
+    display: block; /* Отображение даты на новой строке */
+    margin-bottom: 8px; /* Отступ снизу от даты и района */
+}
+
+.hero h3 {
+    font-size: 20px; /* Размер заголовка объявления */
+    color: #000; /* Цвет заголовка объявления */
+    margin-bottom: 8px; /* Отступ снизу от заголовка объявления */
+}
+
+.hero p {
+    color: #555; /* Цвет текста дополнительной информации */
+}
+.hero img {
+    max-width: 100%; /* Ограничиваем максимальную ширину изображения */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    border-radius: 8px; /* Закругленные углы для изображений */
+    object-fit: cover; /* Обеспечиваем, чтобы изображение заполняло контейнер */
+}
+
+/* Дополнительные стили для элементов списка */
+.hero li {
+    overflow: hidden; /* Скрываем часть изображения, выходящую за пределы контейнера */
+}
