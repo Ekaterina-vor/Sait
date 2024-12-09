@@ -30,7 +30,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     // Проверка на совпадение пароля
     $password = $formData['password'];
     $CheckUser = $db->query("
-        SELECT id FROM users WHERE email = '$email' AND password = '$password'
+        SELECT id FROM users WHERE email = '$email' AND passwords = '$password'
     ")->fetchAll();
     if(!empty($user) && empty($CheckUser)){
         $errors['password'][] = 'Wrong password';
@@ -38,7 +38,18 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     }
     //проверка на совпадение пороля
     if (empty($errors)){
-        echo 123;
+        $token = $formData['email'];
+        $password = $formData['password'];
+        $hash = time();
+        $token = base64_encode("hash=$hash&email=$email&password=$password");
+
+        $db->query("
+        UPDATE users SET api_token='$token'
+        WHERE email ='$email' AND passwords = '$password'
+        ")->fetchAll();
+
+        $_SESSION['token'] = $token;
+        header("Location: ../profile.php");
     }
     if (!empty($errors)){
         $_SESSION['auth-errors'] = $errors;
