@@ -70,7 +70,7 @@ if (array_key_exists('token', $_SESSION)){
                     <!-- Карточка объявления -->
                     <div class="item-card">
                         <div class="item-image">
-                            <img src="images/img/negr.jpg" alt="Фото объявления">
+                            <img src="images/img/lev.jpg" alt="Фото объявления">
                         </div>
                         <div class="item-info">
                             <h3 class="item-title">Найден кот</h3>
@@ -88,7 +88,7 @@ if (array_key_exists('token', $_SESSION)){
                                     <!-- Карточка объявления -->
                                     <div class="item-card">
                                         <div class="item-image">
-                                            <img src="images/img/negr.jpg" alt="Фото объявления">
+                                            <img src="images/img/lev.jpg" alt="Фото объявления">
                                         </div>
                                         <div class="item-info">
                                             <h3 class="item-title">Найден кот</h3>
@@ -106,7 +106,7 @@ if (array_key_exists('token', $_SESSION)){
                                                         <!-- Карточка объявления -->
                     <div class="item-card">
                         <div class="item-image">
-                            <img src="images/img/negr.jpg" alt="Фото объявления">
+                            <img src="images/img/lev.jpg" alt="Фото объявления">
                         </div>
                         <div class="item-info">
                             <h3 class="item-title">Найден кот</h3>
@@ -124,7 +124,7 @@ if (array_key_exists('token', $_SESSION)){
                                         <!-- Карточка объявления -->
                                         <div class="item-card">
                                             <div class="item-image">
-                                                <img src="images/img/negr.jpg" alt="Фото объявления">
+                                                <img src="images/img/lev.jpg" alt="Фото объявления">
                                             </div>
                                             <div class="item-info">
                                                 <h3 class="item-title">Найден кот</h3>
@@ -142,7 +142,7 @@ if (array_key_exists('token', $_SESSION)){
                                                             <!-- Карточка объявления -->
                     <div class="item-card">
                         <div class="item-image">
-                            <img src="images/img/negr.jpg" alt="Фото объявления">
+                            <img src="images/img/lev.jpg" alt="Фото объявления">
                         </div>
                         <div class="item-info">
                             <h3 class="item-title">Найден кот</h3>
@@ -160,7 +160,7 @@ if (array_key_exists('token', $_SESSION)){
                                         <!-- Карточка объявления -->
                                         <div class="item-card">
                                             <div class="item-image">
-                                                <img src="images/img/negr.jpg" alt="Фото объявления">
+                                                <img src="images/img/lev.jpg" alt="Фото объявления">
                                             </div>
                                             <div class="item-info">
                                                 <h3 class="item-title">Найден кот</h3>
@@ -178,7 +178,7 @@ if (array_key_exists('token', $_SESSION)){
                                                             <!-- Карточка объявления -->
                     <div class="item-card">
                         <div class="item-image">
-                            <img src="images/img/negr.jpg" alt="Фото объявления">
+                            <img src="images/img/lev.jpg" alt="Фото объявления">
                         </div>
                         <div class="item-info">
                             <h3 class="item-title">Найден кот</h3>
@@ -196,7 +196,7 @@ if (array_key_exists('token', $_SESSION)){
                                         <!-- Карточка объявления -->
                                         <div class="item-card">
                                             <div class="item-image">
-                                                <img src="images/img/negr.jpg" alt="Фото объявления">
+                                                <img src="images/img/lev.jpg" alt="Фото объявления">
                                             </div>
                                             <div class="item-info">
                                                 <h3 class="item-title">Найден кот</h3>
