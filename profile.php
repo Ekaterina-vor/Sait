@@ -1,3 +1,26 @@
+<?php session_start();
+//проверка аутентификакции
+include_once('api/db.php');
+
+if (array_key_exists('token', $_SESSION)){
+    //если токен есть, проверяем его валидность
+    $token = $_SESSION['token'];
+    $userId = $db->query("
+    SELECT id FROM users WHERE api_token ='$token'
+    ")->fetchAll();
+
+    if (empty($userId)) {
+        unset($_SESSION['token']);
+        header('Location: login.php'); 
+    }
+
+}else {
+    //если токена нет, редирект на главную
+   header('Location: login.php'); 
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -13,7 +36,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <a href="glavn.html" class="header-link">На главную</a>
+            <a href="glavn.php" class="header-link">На главную</a>
         </div>
     </header>
     <main>

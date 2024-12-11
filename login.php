@@ -1,4 +1,22 @@
-<?php session_start(); ?>
+<?php session_start();
+//проверка аутентификакции
+include_once('api/db.php');
+
+if (array_key_exists('token', $_SESSION)){
+    //если токен есть, проверяем его валидность
+    $token = $_SESSION['token'];
+    $userId = $db->query("
+    SELECT id FROM users WHERE api_token ='$token'
+    ")->fetchAll();
+
+    if (!empty($userId)) {
+        header('Location: profile.php'); 
+    }
+}
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -15,7 +33,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <a href="glavn.html" class="header-link"><i class="fa fa-home"></i> На главную</a>
+            <a href="glavn.php" class="header-link"><i class="fa fa-home"></i> На главную</a>
         </div>
     </header>
     <main>
@@ -38,7 +56,7 @@
             <form class="login-form" action="api/authUser.php" method="POST">
                 <h1 class="login-form-title">Авторизация</h1>
                 <label for="email">Email<?php showError('email');?></label>
-                <input type="email" id="email" placeholder="example@mail.com">
+                <input name="email" type="email" id="email" placeholder="example@mail.com">
                 <label for="password">Пароль<?php showError('password');?></label>
                 <input type="password" id="password" name="password">
                 <button type="submit">Войти</a></button>

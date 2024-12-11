@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -23,10 +24,15 @@
         <nav>
             <ul>
                 <li><a href="#" class="search"><i class="fa fa-search"></i> Поиск</a></li> 
-                <li><a href="register.html" class="register"><i class="fa fa-user-plus"></i> Регистрация</a></li> 
-                <li><a href="profile.html" class="profile"><i class="fa fa-user"></i> Личный кабинет</a></li> 
+                <li><a href="register.php" class="register"><i class="fa fa-user-plus"></i> Регистрация</a></li> 
+                <li><a href="profile.php" class="profile"><i class="fa fa-user"></i> Личный кабинет</a></li> 
                 <li><a href="#" class="add"><i class="fa fa-plus-circle"></i> Добавить</a></li> 
                 <li><a href="#" class="reviews"><i class="fa fa-comments"></i> Отзывы</a></li>
+                <?php 
+                    if (array_key_exists('token', $_SESSION)){
+                        echo "<li><a href='api/logoutUser.php' class='reviews'>Выход</a></li>";
+                    }
+                    ?>
             </ul>
         </nav>
     </div>
