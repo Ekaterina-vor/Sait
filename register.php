@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 29237f98aa7934d4b05d491df0c9e55f7c36f471
 <?php session_start(); 
 //проверка аутентификакции
 include_once('api/db.php');
@@ -15,6 +19,9 @@ if (array_key_exists('token', $_SESSION)){
 }
 
 ?>
+=======
+<?php session_start(); ?>
+>>>>>>> 597e13c134d716b50237299d684807957d89cd78
 <!DOCTYPE html>
 <html lang="ru">
 <head>
